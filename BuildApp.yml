@@ -21,11 +21,11 @@ stages:
      vmImage: 'ubuntu-latest'
     steps:
     - task: ACRTaskV0@0
-      displayName: 'appacrtask'
+      displayName: 'scenario2appacrtask'
       inputs:
         azureSubscription: 'anshenoDev'
         azureContainerRegistry: 'anshenormdev'
-        containerRepository: 'app'
+        containerRepository: 'scenario2app'
         gitHubConnection: 'github.com_Anumita'
         repositoryName: Anumita/nodeapp
         branch: master
